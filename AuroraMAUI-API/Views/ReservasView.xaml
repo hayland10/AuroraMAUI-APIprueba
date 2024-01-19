@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AuroraMAUI_API.Views"
              x:Class="AuroraMAUI_API.Views.ReservasView"
              Title="ReservasView">
-    <VerticalStackLayout>
-        <Label Text="Ingresar el id de la reserva a buscar:" />
-        <Entry x:Name="lblNum"/>
-        <Button Text="Buscar" Clicked="Buscar_clicked"/>
-        <Label Text="La reserva con el ID ingresado es:"/>
-        <Label Text="Nombre de la Reserva" FontSize="Micro" TextColor="SkyBlue" />
-        <Label x:Name="lblNombre" />
-        <Label Text="Telefono" FontSize="Micro" TextColor="SkyBlue" />
-        <Label x:Name="lblTelefono"/>
-        <Label Text="Numero de personas" FontSize="Micro" TextColor="SkyBlue" />
-        <Label x:Name="lblNumPersonas"/>
-        <Label Text="Hora de llegada" FontSize="Micro" TextColor="SkyBlue" />
-        <Label x:Name="lblHoraLlegada"/>
-        
-    </VerticalStackLayout>
+    <StackLayout>
+        <!-- Agrega un ListView para mostrar las reservas -->
+        <ListView x:Name="ReservasListView">
+            <ListView.Header>
+                <!-- Puedes agregar encabezados si lo deseas -->
+                <Label Text="Lista de Reservas" FontAttributes="Bold" HorizontalOptions="Center" />
+            </ListView.Header>
+            <!-- Define un DataTemplate para mostrar la información de cada reserva -->
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding nombre}" FontAttributes="Bold" />
+                            <Label Text="{Binding numeroPersonas}" />
+                            <Label Text="{Binding telefono}" />
+                            <Label Text="{Binding fecha}" />
+                            <Label Text="{Binding horaLlega}" />
+                            <Button Text="Eliminar" BackgroundColor="Red" TextColor="White" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>
+
+
+
+
+
