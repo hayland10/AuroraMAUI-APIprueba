@@ -5,13 +5,10 @@
              x:Class="AuroraMAUI_API.Views.ReservasView"
              Title="ReservasView">
     <StackLayout>
-        <!-- Agrega un ListView para mostrar las reservas -->
-        <ListView x:Name="ReservasListView">
+        <ListView x:Name="ReservasListView" ItemsSource="{Binding Reservas}">
             <ListView.Header>
-                <!-- Puedes agregar encabezados si lo deseas -->
                 <Label Text="Lista de Reservas" FontAttributes="Bold" HorizontalOptions="Center" />
             </ListView.Header>
-            <!-- Define un DataTemplate para mostrar la información de cada reserva -->
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -21,7 +18,8 @@
                             <Label Text="{Binding telefono}" />
                             <Label Text="{Binding fecha}" />
                             <Label Text="{Binding horaLlega}" />
-                            <Button Text="Eliminar" BackgroundColor="Red" TextColor="White" />
+                            <!-- Vincula el Command del botón de eliminación -->
+                            <Button Command="{Binding EliminarCommand}" Text="Eliminar" BackgroundColor="Red" TextColor="White" />
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>
@@ -29,6 +27,7 @@
         </ListView>
     </StackLayout>
 </ContentPage>
+
 
 
 

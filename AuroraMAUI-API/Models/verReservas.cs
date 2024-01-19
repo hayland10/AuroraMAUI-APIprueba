@@ -19,6 +19,8 @@ namespace AuroraMAUI_API.Models
         public string telefono { get; set; }
         public DateTime fecha { get; set; }
         public string horaLlega { get; set; }
+
+        public Command EliminarCommand { get; set; }
     }
 }
 
