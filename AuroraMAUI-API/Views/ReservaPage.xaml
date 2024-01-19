@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AuroraMAUI_API.Views.ReservaPage"
+             Title="ReservaPage">
+
+    <VerticalStackLayout BackgroundColor="Black">
+        <Label 
+            Text="RESERVA:"
+            TextColor="White"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="Nombre: "
+            TextColor="White"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" />
+        <Frame BorderColor="#007ACC" BackgroundColor="Black" HasShadow="False" Padding="0" Margin="0">
+            <Entry x:Name="entrynombre" />
+        </Frame>
+        <Label 
+            Text="Telefono:"
+            TextColor="White"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" />
+        <Frame BorderColor="#007ACC" BackgroundColor="Black" HasShadow="False" Padding="0" Margin="0">
+            <Entry x:Name="entryTelefono" Keyboard="Telephone" PlaceholderColor="Gray"/>
+        </Frame>
+
+        <Label 
+            Text="Numero de personas: "
+            TextColor="White"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" />
+        <Frame BorderColor="#007ACC" BackgroundColor="Black" HasShadow="False" Padding="0" Margin="0">
+            <Entry x:Name="numPersona" PlaceholderColor="Gray"/>
+        </Frame>
+
+        <Label 
+            Text="Fecha: "
+            TextColor="White"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" />
+        <Frame BorderColor="#007ACC" BackgroundColor="Black" HasShadow="False" Padding="0" Margin="0">
+            <DatePicker x:Name="Fechita"/>
+        </Frame>
+
+        <Label 
+            Text="Hora de llegada"
+            TextColor="White"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" />
+        <Frame BorderColor="#007ACC" BackgroundColor="Black" HasShadow="False" Padding="0" Margin="0">
+            <Entry x:Name="horaLlegada" PlaceholderColor="Gray"/>
+        </Frame>
+        <Button Text="Reserva" Clicked="Button_Clicked" />
+
+    </VerticalStackLayout>
+</ContentPage>

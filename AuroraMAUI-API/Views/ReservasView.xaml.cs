@@ -26,7 +26,10 @@ public partial class ReservasView : ContentPage
                 {
                     var json = await response.Content.ReadAsStringAsync();
                     var reserva = JsonConvert.DeserializeObject<Rootobject>(json);
-                    lblNombre.Text = reserva.Class1.ToString();
+                    lblNombre.Text = reserva.nombre;
+                    lblNumPersonas.Text = reserva.numeroPersonas.ToString();
+                    lblHoraLlegada.Text = reserva.horaLlega;
+                    lblTelefono.Text= reserva.telefono;
 
 
                 }

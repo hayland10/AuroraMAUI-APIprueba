@@ -7,9 +7,14 @@
         <Label Text="Ingresar el id de la reserva a buscar:" />
         <Entry x:Name="lblNum"/>
         <Button Text="Buscar" Clicked="Buscar_clicked"/>
-
-        <Label x:Name="lblNombre"/>
+        <Label Text="La reserva con el ID ingresado es:"/>
+        <Label Text="Nombre de la Reserva" FontSize="Micro" TextColor="SkyBlue" />
+        <Label x:Name="lblNombre" />
+        <Label Text="Telefono" FontSize="Micro" TextColor="SkyBlue" />
+        <Label x:Name="lblTelefono"/>
+        <Label Text="Numero de personas" FontSize="Micro" TextColor="SkyBlue" />
         <Label x:Name="lblNumPersonas"/>
+        <Label Text="Hora de llegada" FontSize="Micro" TextColor="SkyBlue" />
         <Label x:Name="lblHoraLlegada"/>
         
     </VerticalStackLayout>

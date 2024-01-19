@@ -9,11 +9,6 @@ namespace AuroraMAUI_API.Models
 
     public class Rootobject
     {
-        public Class1[] Property1 { get; set; }
-    }
-
-    public class Class1
-    {
         public int idReserva { get; set; }
         public string nombre { get; set; }
         public int numeroPersonas { get; set; }
