@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AuroraMAUI_API.Views.Registrarse">
+    <ScrollView BackgroundColor="Black">
+        <VerticalStackLayout>
+            <Label 
+            TextColor="White"
+            Text="Registrarse"
+            FontSize="32"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            <Label 
+            TextColor="White"
+            Text="Nombre:"
+            FontSize="18"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" />
+            <Frame BorderColor="#007ACC" BackgroundColor="Black" HasShadow="False" Padding="0" Margin="0">
+                <Entry PlaceholderColor="Gray" Placeholder="Ingrese su nombre" x:Name="lblNombre"/>
+            </Frame>
+            
+            
+            <Label
+                TextColor="White"
+                Text="Apellido:"
+                FontSize="18"
+                VerticalOptions="Start"
+                HorizontalOptions="Start"/>
+            <Frame BorderColor="#007ACC" BackgroundColor="Black" HasShadow="False" Padding="0" Margin="0">
+                <Entry  PlaceholderColor="Gray" Placeholder="Ingrese su apellido" x:Name="lblApellido"/>
+            </Frame>
+           
+
+            <Label
+                Text="Usuario:"
+                TextColor="White"
+                FontSize="18"
+                VerticalOptions="Start"
+                HorizontalOptions="Start"/>
+            <Frame BorderColor="#007ACC" BackgroundColor="Black" HasShadow="False" Padding="0" Margin="0">
+                 <Entry PlaceholderColor="Gray" Placeholder="Ingrese un nombre nuevo de usuario" x:Name="lblUsuario"/>
+            </Frame>
+           
+
+            <Label
+                Text="Ingrese una nueva contraseña:"
+                TextColor="White"
+                FontSize="18"
+                VerticalOptions="Start"
+                HorizontalOptions="Start"/>
+            <Frame BorderColor="#007ACC" BackgroundColor="Black" HasShadow="False" Padding="0" Margin="0">
+                <Entry PlaceholderColor="Gray" Placeholder="Contraseña" x:Name="lblContraseña"/>
+            </Frame>
+            
+            <Button
+                BackgroundColor="White"
+                TextColor="Black"
+                x:Name="Registrar"
+                Text="Registarse"
+                HorizontalOptions="Center" />
+            <Button
+            BackgroundColor="White"
+            TextColor="Black"
+            x:Name="Regresar"
+            Text="Regresar"
+            Clicked="Regresar_Clicked"
+            HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

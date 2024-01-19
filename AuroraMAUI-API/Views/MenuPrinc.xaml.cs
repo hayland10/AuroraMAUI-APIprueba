@@ -25,5 +25,10 @@ namespace AuroraMAUI_API.Views
         {
             Shell.Current.GoToAsync(nameof(ReservasView));
         }
+
+        private void Regresar_Clicked(object sender, EventArgs e)
+        {
+            Shell.Current.GoToAsync("..");
+        }
     }
 }

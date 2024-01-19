@@ -121,6 +121,7 @@
                 TextColor="Black"
                 HeightRequest="50"
                 WidthRequest="150"
+                Clicked="Regresar_Clicked"
                 HorizontalOptions="Center" />
             <Button
                 Text="Ver Reservas"
