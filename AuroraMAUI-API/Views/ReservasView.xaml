@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AuroraMAUI_API.Views.ReservasView"
+             Title="ReservasView">
+    <VerticalStackLayout>
+        <Label Text="Ingresar el id de la reserva a buscar:" />
+        <Entry x:Name="lblNum"/>
+        <Button Text="Buscar" Clicked="Buscar_clicked"/>
+
+        <Label x:Name="lblNombre"/>
+        <Label x:Name="lblNumPersonas"/>
+        <Label x:Name="lblHoraLlegada"/>
+        
+    </VerticalStackLayout>
+</ContentPage>
