@@ -35,6 +35,7 @@
 
                 <Label
                     Text="CASINO PARTY"
+                    x:Name="Fiesta1"
                     TextColor="White"
                     FontSize="Large"
                     VerticalOptions="Center" 
@@ -61,10 +62,10 @@
                         Grid.Column="0"
                         HorizontalOptions="Center"/>
 
-
-
+                
                 <Label
                 Text="SAVAGE PARTY"
+                x:Name="Fiesta2"
                 FontSize="Large"
                 TextColor="White"
                 VerticalOptions="Center" 
@@ -72,12 +73,14 @@
                 Grid.Row="0"
                 Grid.Column="1"
                 />
+                
                 <Image Source="https://previews.123rf.com/images/vasilyrosca/vasilyrosca1702/vasilyrosca170200232/71501661-dise%C3%B1o-de-flyer-de-fiesta-disco-banner-de-baile-para-club-de-m%C3%BAsica-plantilla-de-discoteca-vida.jpg"
                 x:Name="SAVAGE"
                 VerticalOptions="Fill" 
                 HorizontalOptions="Fill"
                    Grid.Row="1"
                  Grid.Column="1"/>
+                
                 <Button 
                 Text="RESERVAR"
                 BackgroundColor="White"
@@ -90,6 +93,7 @@
 
                 <Label
                 Text="ZENS PARTY"
+                x:Name="Fiesta3"
                 FontSize="Large"
                 TextColor="White"
                 VerticalOptions="Center" 
@@ -144,6 +148,7 @@
                 Grid.Row="2"
                 Grid.Column="2"
                 Margin="0,10,0,0"
+                Clicked="Actualizar_Clicked"
                 HorizontalOptions="Center"/>
 
             <Label x:Name="labelDatos"
